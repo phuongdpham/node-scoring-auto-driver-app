@@ -2,10 +2,29 @@
 <html>
 <head>
   <meta charset="utf-8" >
+  <title>Scoring Auto Driver</title>
 </head>
 
 <body>
-  <p>Welcome to my Chart</p>
+  <h1>Welcome to my Chart</h1>
+  <select id="sensor">
+    <option value="1">Sensor 1</option>
+    <option value="2">Sensor 2</option>
+  </select>
+
+  <table style="width: 100%; border: 0;">
+    <tr>
+      <td>
+        <canvas id="overviewChart" width="400" height="400"></canvas>
+      </td>
+      <td>
+        <canvas id="timeSpeedChart" width="400" height="400"></canvas>
+      </td>
+    </tr>
+  </table>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="./js/index.js"></script>
 
 </html>
